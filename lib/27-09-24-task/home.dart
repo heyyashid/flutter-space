@@ -34,7 +34,8 @@ class _HomeeState extends State<Homee> {
                 foregroundColor: Colors.white
               ),
               onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (_) => SigninPage())) ;                 
+                    // Navigator.push(context, MaterialPageRoute(builder: (_) => SigninPage())) ; 
+                    Navigator.pop(context);                
               }, child:
               Text("Logout",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),) ),
           )

@@ -114,7 +114,8 @@ class _SigninPageState extends State<SigninPage> {
                         ),
                         onPressed: (){
                           if(formkey.currentState!.validate()){
-                        Navigator.push(context, MaterialPageRoute(builder: (_)=>Homee()));
+                        // Navigator.push(context, MaterialPageRoute(builder: (_)=>Homee()));
+                        Navigator.pushNamed(context, "home");
                           }else if(emailcontroller.text.isEmpty || passcontroller.text.isEmpty){
                             ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("invalid credenstials!!")));
                           }
