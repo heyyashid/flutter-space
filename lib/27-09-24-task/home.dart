@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample/27-09-24-task/login.dart';
 
 class Homee extends StatefulWidget {
   const Homee({super.key});
@@ -8,6 +9,9 @@ class Homee extends StatefulWidget {
 }
 
 class _HomeeState extends State<Homee> {
+
+ 
+   TextEditingController passcontroller =TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +33,9 @@ class _HomeeState extends State<Homee> {
                 backgroundColor: Color.fromARGB(255, 133, 106, 166),
                 foregroundColor: Colors.white
               ),
-              onPressed: (){}, child:
+              onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (_) => SigninPage())) ;                 
+              }, child:
               Text("Logout",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),) ),
           )
           

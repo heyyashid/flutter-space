@@ -24,12 +24,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      routes: {
-        "login": (context) => SigninPage(),
-        "home" :(context) =>Homee()      },
-      initialRoute: "home"
+     
       
-      // home:Homee()
+      home:SigninPage()
     );
   }
 }
