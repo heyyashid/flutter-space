@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:sample/17-09-24_task/chessboard.dart';
 import 'package:sample/27-09-24-task/home.dart';
 import 'package:sample/27-09-24-task/login.dart';
+import 'package:sample/27-09-24-task/navigation/home.dart';
+import 'package:sample/27-09-24-task/navigation/screen-a.dart';
+import 'package:sample/27-09-24-task/navigation/screen-b.dart';
 import 'package:sample/container.dart';
 import 'package:sample/image.dart';
 import 'package:sample/19-09-24_task/login.dart';
@@ -25,12 +28,13 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
      routes: {
-      "signin" :(context )=>SigninPage(),
-      "home" :(context )=>Homee(),
+      "home" :(context )=>MyHome(),
+      "screenA" :(context )=>ScreenA(),
+      "screenB" :(context )=>ScreenB(),
      },
-     initialRoute: "signin",
+     initialRoute: "home",
       
-      // home:SigninPage()
+      // home:MyHome(),
     );
   }
 }
