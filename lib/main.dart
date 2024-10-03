@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:sample/02-10-24-task/profile.dart';
 import 'package:sample/17-09-24_task/chessboard.dart';
+import 'package:sample/30-09-24-task/firstpage.dart';
 import 'package:sample/27-09-24-task/home.dart';
 import 'package:sample/27-09-24-task/login.dart';
+import 'package:sample/30-09-24-task/secondpage.dart';
 import 'package:sample/navigation/home.dart';
 import 'package:sample/navigation/screen-a.dart';
 import 'package:sample/navigation/screen-b.dart';
@@ -27,14 +30,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-     routes: {
-      "home" :(context )=>MyHome(),
-      "screenA" :(context )=>ScreenA(),
-      "screenB" :(context )=>ScreenB(),
-     },
-     initialRoute: "home",
+    //   routes: {
+    //    "firstpage" :(context )=>FirstPage(),
+    //   "secondpage" :(context )=>SecondPage(),
+    
+    //  },
+    //  initialRoute: "firstpage",
       
-      // home:MyHome(),
+      home:Profile()
     );
   }
 }
