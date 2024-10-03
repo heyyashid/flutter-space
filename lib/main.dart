@@ -30,14 +30,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-    //   routes: {
-    //    "firstpage" :(context )=>FirstPage(),
-    //   "secondpage" :(context )=>SecondPage(),
+      routes: {
+       "firstpage" :(context )=>FirstPage(),
+      "secondpage" :(context )=>SecondPage(),
     
-    //  },
-    //  initialRoute: "firstpage",
+     },
+     initialRoute: "firstpage",
       
-      home:Profile()
+      // home:Profile()
     );
   }
 }

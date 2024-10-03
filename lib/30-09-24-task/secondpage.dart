@@ -12,6 +12,8 @@ class _SecondPageState extends State<SecondPage> {
   TextEditingController passcontroll =TextEditingController();
   final formkey =GlobalKey<FormState>();
 
+  Color? color = const Color.fromARGB(255, 176, 240, 101);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,9 +96,9 @@ class _SecondPageState extends State<SecondPage> {
                         height: 50,
                         width: 200,
                          child: ElevatedButton(
-                          
+                         
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color.fromARGB(255, 222, 223, 220),
+                            backgroundColor: color,
                             
                           ),
                           
@@ -125,16 +127,20 @@ class _SecondPageState extends State<SecondPage> {
           height: 50,
           width: 440,
           child: InkWell(
+            hoverColor: const Color.fromARGB(255, 176, 240, 101),
+            borderRadius: BorderRadius.circular(30),
             onTap: (){
              
             },
             child: Ink(
+              
               width: 400,
               height: 50,
               decoration: BoxDecoration(
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(30),
                 color: const Color.fromARGB(255, 222, 223, 220),
+                // color: color
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,     
