@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sample/02-10-24-task/profile.dart';
+import 'package:sample/03-10-24-task/bus_booking.dart';
+import 'package:sample/03-10-24-task/confirmpage.dart';
+import 'package:sample/03-10-24-task/homepage.dart';
 import 'package:sample/17-09-24_task/chessboard.dart';
 import 'package:sample/30-09-24-task/firstpage.dart';
 import 'package:sample/27-09-24-task/home.dart';
@@ -31,11 +34,11 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-       "firstpage" :(context )=>FirstPage(),
-      "secondpage" :(context )=>SecondPage(),
-    
+       "busbooking" :(context )=>BookingPage(),
+      "confirmpage" :(context )=>ConfirmPage(),
+    "homepage":(context)=>HomePage1()
      },
-     initialRoute: "firstpage",
+     initialRoute: "homepage",
       
       // home:Profile()
     );
