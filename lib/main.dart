@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:sample/02-10-24-task/profile.dart';
 import 'package:sample/03-10-24-task/bus_booking.dart';
 import 'package:sample/03-10-24-task/confirmpage.dart';
@@ -20,9 +21,13 @@ import 'package:sample/navigation/screen-b.dart';
 import 'package:sample/container.dart';
 import 'package:sample/image.dart';
 import 'package:sample/19-09-24_task/login.dart';
+import 'package:sample/provider/provider_class.dart';
+import 'package:sample/provider/user_management.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( ChangeNotifierProvider(
+    create: (context)=> UserProvider(),
+    child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -46,7 +51,7 @@ class MyApp extends StatelessWidget {
     //  },
     //  initialRoute: "homepage",
       
-      home:BottomBarEx(),
+      home:usermgmt(),
     );
   }
 }
