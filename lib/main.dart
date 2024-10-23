@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:sample/02-10-24-task/profile.dart';
 import 'package:sample/03-10-24-task/bus_booking.dart';
@@ -15,6 +16,7 @@ import 'package:sample/27-09-24-task/home.dart';
 import 'package:sample/27-09-24-task/login.dart';
 import 'package:sample/30-09-24-task/secondpage.dart';
 import 'package:sample/alertdialog.dart';
+import 'package:sample/getx/user_mng.dart';
 import 'package:sample/navigation/home.dart';
 import 'package:sample/navigation/screen-a.dart';
 import 'package:sample/navigation/screen-b.dart';
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -51,7 +53,7 @@ class MyApp extends StatelessWidget {
     //  },
     //  initialRoute: "homepage",
       
-      home:usermgmt(),
+      home:UserMngGet(),
     );
   }
 }
