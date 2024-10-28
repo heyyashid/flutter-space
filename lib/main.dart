@@ -23,6 +23,7 @@ import 'package:sample/navigation/screen-b.dart';
 import 'package:sample/container.dart';
 import 'package:sample/image.dart';
 import 'package:sample/19-09-24_task/login.dart';
+import 'package:sample/product_api/hompage.dart';
 import 'package:sample/provider/provider_class.dart';
 import 'package:sample/provider/user_management.dart';
 
@@ -53,7 +54,7 @@ class MyApp extends StatelessWidget {
     //  },
     //  initialRoute: "homepage",
       
-      home:UserMngGet(),
+      home:Product_ui(),
     );
   }
 }
